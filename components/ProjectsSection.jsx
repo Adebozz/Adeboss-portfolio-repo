@@ -12,17 +12,17 @@ export default function ProjectsSection() {
     {
       title: "E-Commerce Website",
       desc: "A modern full-stack e-commerce site with product listings, cart, and checkout.",
-      tech: "Next.js, TailwindCSS, React.js, PostgreSQL",
-      img: "/images/ecommerce.png",
-      github: "https://github.com/username/ecommerce",
-      live: "https://ecommerce-demo.vercel.app",
+      tech: "Next.js, CSS, React.js, MongoDB",
+      img: "/images/image.png",
+      github: "https://github.com/Adebozz/dessystores",
+      live: "https://dessystores.vercel.app/",
     },
     {
       title: "PDF Converter",
       desc: "Converts files to PDF and vice versa. Stores uploaded files securely.",
       tech: "React.js, TailwindCSS, MongoDB, CSS",
       img: "/images/pdf-converter.png",
-      github: "https://github.com/username/pdf-converter",
+      github: "https://github.com/Adebozz/my-pdf-file",
       live: "https://pdf-converter-demo.vercel.app",
     },
     {
