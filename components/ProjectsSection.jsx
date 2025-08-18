@@ -21,7 +21,7 @@ export default function ProjectsSection() {
       title: "PDF Converter",
       desc: "Converts files to PDF and vice versa. Stores uploaded files securely.",
       tech: "React.js, TailwindCSS, MongoDB, CSS",
-      img: "/images/pdf-converter.png",
+      img: "/images/pdf-convert.png",
       github: "https://github.com/Adebozz/my-pdf-file",
       live: "https://pdf-converter-demo.vercel.app",
     },
