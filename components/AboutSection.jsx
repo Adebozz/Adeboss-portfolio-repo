@@ -20,14 +20,13 @@ export default function AboutSection() {
         About Me
       </h2>
       <p className="mt-4 text-lg text-gray-700 dark:text-gray-300 max-w-3xl leading-relaxed">
-        I am a software developer with expertise in web development, UI/UX, and
-        graphic design. I create modern, user-friendly, and visually appealing
-        solutions tailored to client needs. I have collaborated with businesses
-        across diverse industries, delivering projects that combine creativity,
-        functionality, and the latest trends. I am currently pursuing my
-        Master’s degree in Artificial Intelligence and Data Science to further
-        enhance my technical expertise and innovative capabilities.
+        I’m a passionate software developer specializing in modern web development, UI/UX design, and visual storytelling. 
+        I build intuitive, high-performance, and visually engaging digital experiences tailored to each client’s goals. 
+        Over the years, I’ve collaborated with businesses across various industries, delivering creative and functional 
+        solutions that blend innovation with practicality. I’m currently pursuing a Master’s degree in Artificial Intelligence 
+        and Data Science to deepen my technical expertise and expand my ability to create intelligent, data-driven products.
       </p>
+
     </motion.section>
   );
 }
