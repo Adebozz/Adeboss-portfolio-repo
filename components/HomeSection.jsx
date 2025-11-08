@@ -7,12 +7,14 @@ export default function HomeSection() {
   const [mounted, setMounted] = useState(false);
   const [roleIndex, setRoleIndex] = useState(0);
 
-  const roles = [
-    "Web Developer",
-    "Graphic Designer",
-    "AI Specialist",
-    "Software Developer",
-  ];
+ const roles = [
+  "Front-End Developer",
+  "Full-Stack Developer",
+  "AI & Data Science Enthusiast",
+  "Software Developer",
+  "UI/UX Engineer",
+];
+
 
   useEffect(() => {
     setMounted(true);
