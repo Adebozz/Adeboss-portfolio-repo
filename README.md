@@ -1,30 +1,35 @@
 🚀 Adeboss Portfolio
-This is my personal portfolio website, built to showcase my web development skills, projects, and experience. It’s fully responsive, supports dark mode, and is optimized for performance.
+
+A modern and responsive personal portfolio website built to showcase my web development skills, projects, and experience. Designed with performance, accessibility, and clean UI/UX in mind, it supports dark mode, smooth animations, and a fully responsive layout.
 
 🌐 Live Demo
-Visit Portfolio
 
-🛠️ Technologies Used
-Next.js 15 – App Router & Server Components
+🔗 Portfolio: https://adeboss.vercel.app/
 
-React 19 – UI components
+🛠️ Tech Stack
+
+Next.js 15 – App Router, Server Components
+
+React 19 – Component-based UI
 
 Tailwind CSS 4 – Styling & responsive design
 
 Framer Motion – Smooth animations
 
-React Icons – Iconography
+React Icons – Icon assets
 
 📂 Features
-Responsive layout for all devices
+
+Fully responsive layout (mobile, tablet, desktop)
 
 Dark/Light mode toggle
 
 Smooth scroll navigation
 
-Animated sections using Framer Motion
+Animated sections powered by Framer Motion
 
-Projects showcase
+Featured projects showcase
 
-Contact form
+Contact form integration
 
+Clean and modern UI
