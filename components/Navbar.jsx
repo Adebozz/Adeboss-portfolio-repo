@@ -39,7 +39,7 @@ export default function Navbar() {
 
   if (!isMounted) return null;
 
-  const links = ["Home", "About", "Projects", "Contact"];
+  const links = ["Home", "About", "Skills", "Projects", "Contact"];
 
   return (
     <motion.nav

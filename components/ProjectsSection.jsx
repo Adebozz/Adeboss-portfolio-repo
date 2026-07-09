@@ -10,6 +10,14 @@ export default function ProjectsSection() {
 
   const projects = [
     {
+      title: "Cognify — AI Study Engine",
+      desc: "Adaptive exam-prep app that turns uploaded notes, slides, and PDFs into a personalised 3-phase revision session: knowledge scan, weak-spot drill, and final challenge — with confidence scoring and topic mastery breakdowns.",
+      tech: "Next.js, TypeScript, AI Integration",
+      img: "/images/cognify.png",
+      github: "https://github.com/Adebozz/cognify",
+      live: "https://cognify-exam.vercel.app/",
+    },
+    {
       title: "E-Commerce Website",
       desc: "A modern full-stack e-commerce site with product listings, cart, and checkout.",
       tech: "Next.js, CSS, React.js, MongoDB",
@@ -24,14 +32,6 @@ export default function ProjectsSection() {
       img: "/images/pdf-convert.png",
       github: "https://github.com/Adebozz/pdf-converter",
       live: "https://pdf-converter-ysns.vercel.app/",
-    },
-    {
-      title: "Food Delivery Platform",
-      desc: "Order food online with real-time order tracking and delivery status.",
-      tech: "React.js, TailwindCSS, REST API, MongoDB",
-      img: "/images/food-del.png",
-      github: "https://github.com/username/food-delivery",
-      live: "https://food-delivery-demo.vercel.app",
     },
   ];
 
