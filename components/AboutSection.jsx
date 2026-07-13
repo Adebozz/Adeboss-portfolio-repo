@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaCode, FaBrain, FaPaintBrush } from "react-icons/fa";
+import { FaCode, FaBrain, FaServer } from "react-icons/fa";
 
 const highlights = [
   {
@@ -15,9 +15,9 @@ const highlights = [
     desc: "Pursuing an MSc in AI & Data Science; shipping production ML systems with real monitoring, drift detection, and MLOps.",
   },
   {
-    Icon: FaPaintBrush,
-    title: "UI/UX & Design",
-    desc: "Intuitive, visually engaging interfaces — because great engineering deserves great design.",
+    Icon: FaServer,
+    title: "MLOps & Cloud",
+    desc: "Dockerized deployments on Kubernetes with Terraform, Prometheus monitoring, and CI/CD — models that survive contact with production.",
   },
 ];
 

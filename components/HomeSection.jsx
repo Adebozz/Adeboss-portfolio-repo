@@ -2,17 +2,18 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { FaGithub, FaEnvelope, FaArrowRight } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function HomeSection() {
   const [mounted, setMounted] = useState(false);
   const [roleIndex, setRoleIndex] = useState(0);
 
   const roles = [
+    "Software Developer",
     "Full-Stack Developer",
     "AI & Data Science Enthusiast",
     "Machine Learning Engineer",
-    "UI/UX Engineer",
   ];
 
   useEffect(() => {
@@ -101,6 +102,24 @@ export default function HomeSection() {
               className="p-2.5 rounded-full text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
               <FaGithub size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/adeboss/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="p-2.5 rounded-full text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            >
+              <FaLinkedin size={20} />
+            </a>
+            <a
+              href="https://x.com/Adeboss02"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X (Twitter)"
+              className="p-2.5 rounded-full text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            >
+              <FaXTwitter size={20} />
             </a>
             <a
               href="mailto:ademolaadeigbe3@gmail.com"

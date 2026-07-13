@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   const [isMounted, setIsMounted] = useState(false);
@@ -24,6 +25,24 @@ export default function Footer() {
           className="hover:text-white transition-colors"
         >
           <FaGithub size={20} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/adeboss/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="hover:text-white transition-colors"
+        >
+          <FaLinkedin size={20} />
+        </a>
+        <a
+          href="https://x.com/Adeboss02"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+          className="hover:text-white transition-colors"
+        >
+          <FaXTwitter size={20} />
         </a>
         <a
           href="mailto:ademolaadeigbe3@gmail.com"
