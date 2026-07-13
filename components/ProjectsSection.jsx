@@ -41,7 +41,7 @@ export default function ProjectsSection() {
       tech: ["React", "TailwindCSS", "MongoDB"],
       img: "/images/pdf-convert.png",
       github: "https://github.com/Adebozz/pdf-converter",
-      live: "https://pdf-converter-ysns.vercel.app/",
+      live: "https://pdf-convert-set.vercel.app/",
     },
   ];
 
