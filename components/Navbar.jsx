@@ -50,9 +50,10 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-          Adeboss Portfolio
-        </h1>
+        <a href="#home" className="text-xl font-bold text-gray-900 dark:text-white">
+          Adeboss
+          <span className="text-blue-600 dark:text-blue-400">.</span>
+        </a>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">
@@ -64,7 +65,7 @@ export default function Navbar() {
             >
               <a
                 href={`#${link.toLowerCase()}`}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-500"
+                className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 {link}
               </a>
