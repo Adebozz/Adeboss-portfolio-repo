@@ -11,7 +11,7 @@ const highlights = [
   {
     Icon: FaBrain,
     title: "AI & Machine Learning",
-    desc: "Pursuing an MSc in AI & Data Science; shipping production ML systems with real monitoring, drift detection, and MLOps.",
+    desc: "MSc in AI & Data Science from the University of Hull; shipping production ML systems with real monitoring, drift detection, and MLOps.",
   },
   {
     Icon: FaServer,
@@ -37,9 +37,9 @@ export default function AboutSection() {
 
         <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-center leading-relaxed">
           I&apos;m a software developer who turns ideas into fast, intuitive,
-          and reliable digital products. I&apos;ve worked with businesses
-          across industries, and I&apos;m currently deepening my expertise
-          with a Master&apos;s in Artificial Intelligence and Data Science —
+          and reliable digital products. I&apos;ve built and supported live
+          websites for an educational consultancy and a teaching hospital,
+          and I hold a Master&apos;s in Artificial Intelligence and Data Science —
           building intelligent, data-driven systems that solve real problems.
         </p>
 

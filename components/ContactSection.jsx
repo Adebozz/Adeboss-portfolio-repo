@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaGithub, FaPaperPlane } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaPaperPlane } from "react-icons/fa";
 
 export default function ContactSection() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -71,6 +71,25 @@ export default function ContactSection() {
                 </span>
                 <span className="block text-sm text-gray-600 dark:text-gray-300">
                   github.com/Adebozz
+                </span>
+              </span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/adeboss/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 hover:border-blue-400/50 hover:shadow-md transition-all"
+            >
+              <span className="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400">
+                <FaLinkedin />
+              </span>
+              <span>
+                <span className="block text-sm font-semibold text-gray-900 dark:text-white">
+                  LinkedIn
+                </span>
+                <span className="block text-sm text-gray-600 dark:text-gray-300">
+                  linkedin.com/in/adeboss
                 </span>
               </span>
             </a>
