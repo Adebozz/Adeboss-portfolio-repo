@@ -23,13 +23,21 @@ export default function ProjectsSection() {
       featured: true,
     },
     {
+      title: "University IT Support RAG (MSc)",
+      desc: "Answers IT-support questions with cited sources, using a classifier-assisted retriever and a locally hosted Mistral 7B model. On held-out out-of-scope questions it declined 8 of 10, where BM25 alone declined none, trading hit@3 from 0.97 to 0.90.",
+      tech: ["Python", "scikit-learn", "BM25", "Ollama", "Mistral 7B", "FastAPI"],
+      img: "/images/hull-it-rag.png",
+      github: "https://github.com/Adebozz/hull-it-support-rag-assistant",
+      demoNote: "Independent MSc project at the University of Hull. Not an official University service.",
+      featured: true,
+    },
+    {
       title: "Cognify — AI Study Engine",
       desc: "Adaptive exam-prep app that turns uploaded study material into a 3-phase revision session: knowledge scan, weak-spot drill, and final challenge. Runs on a free rule-based demo engine by default, with optional AI question generation through OpenAI or Claude.",
       tech: ["Next.js", "TypeScript", "OpenAI & Claude APIs"],
       img: "/images/cognify.png",
       github: "https://github.com/Adebozz/cognify",
       live: "https://cognify-exam.vercel.app/",
-      featured: true,
     },
     {
       title: "Dessy Stores",
