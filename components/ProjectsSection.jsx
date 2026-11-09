@@ -6,7 +6,7 @@ export default function ProjectsSection() {
   const projects = [
     {
       title: "Real-Time Fraud Detection",
-      desc: "End-to-end MLOps system trained on 284,807 real card transactions. PR-AUC 0.882, with drift detection, shadow deployment, and drift-gated champion/challenger retraining, exercised against simulated traffic.",
+      desc: "End-to-end MLOps system trained on 284,807 real card transactions. PR-AUC 0.882 and about 1 ms per request when benchmarked locally, with drift detection, shadow deployment, and drift-gated champion/challenger retraining, exercised against simulated traffic.",
       tech: ["XGBoost", "FastAPI", "MLflow", "Kubernetes", "Terraform", "Prometheus"],
       img: "/images/fraud-detection.png",
       github: "https://github.com/Adebozz/fraud-detection-mlops",
