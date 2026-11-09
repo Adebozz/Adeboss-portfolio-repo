@@ -15,6 +15,14 @@ export default function ProjectsSection() {
       featured: true,
     },
     {
+      title: "UK Visa RAG Assistant",
+      desc: "Answers visa questions from official gov.uk guidance with enforced citations, and refuses when retrieval confidence is low. Adding cross-encoder reranking to hybrid search raised top-result accuracy from 53% to 74% on a 100-question evaluation, for about 95 ms of extra latency.",
+      tech: ["Python", "Claude API", "BM25", "Sentence Transformers", "FastAPI", "Streamlit"],
+      img: "/images/uk-visa-rag.png",
+      github: "https://github.com/Adebozz/uk-visa-rag",
+      featured: true,
+    },
+    {
       title: "Cognify — AI Study Engine",
       desc: "Adaptive exam-prep app that turns uploaded study material into a 3-phase revision session: knowledge scan, weak-spot drill, and final challenge. Runs on a free rule-based demo engine by default, with optional AI question generation through OpenAI or Claude.",
       tech: ["Next.js", "TypeScript", "OpenAI & Claude APIs"],
@@ -112,14 +120,16 @@ export default function ProjectsSection() {
 
                 {/* Links */}
                 <div className="mt-5 flex gap-3">
-                  <a
-                    href={proj.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
-                  >
-                    <FaExternalLinkAlt size={12} /> Live Demo
-                  </a>
+                  {proj.live && (
+                    <a
+                      href={proj.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
+                    >
+                      <FaExternalLinkAlt size={12} /> Live Demo
+                    </a>
+                  )}
                   {proj.github && (
                     <a
                       href={proj.github}
