@@ -5,39 +5,17 @@ import Link from "next/link";
 import { FiMenu, FiX, FiMoon, FiSun } from "react-icons/fi";
 
 export default function Navbar() {
-  const [isMounted, setIsMounted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
-
-    // Load saved theme
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-      setDarkMode(true);
-    }
-
     // Enable smooth scrolling globally
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
 
   const toggleDarkMode = () => {
-    if (darkMode) {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    }
-    setDarkMode(!darkMode);
+    const isDark = document.documentElement.classList.toggle("dark");
+    localStorage.setItem("color-theme", isDark ? "dark" : "light");
   };
-
-  if (!isMounted) return null;
 
   const links = ["Home", "About", "Skills", "Projects", "Contact"];
 
@@ -79,7 +57,8 @@ export default function Navbar() {
             onClick={toggleDarkMode}
             className="text-gray-700 dark:text-gray-300 hover:text-blue-500"
           >
-            {darkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+            <FiSun size={20} className="hidden dark:block" />
+            <FiMoon size={20} className="dark:hidden" />
           </button>
 
           <button

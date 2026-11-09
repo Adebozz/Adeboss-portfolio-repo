@@ -1,13 +1,10 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaGithub, FaPaperPlane } from "react-icons/fa";
 
 export default function ContactSection() {
-  const [isMounted, setIsMounted] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  useEffect(() => setIsMounted(true), []);
-  if (!isMounted) return null;
 
   const handleSubmit = (e) => {
     e.preventDefault();

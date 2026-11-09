@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaCode, FaBrain, FaServer } from "react-icons/fa";
 
@@ -22,10 +21,6 @@ const highlights = [
 ];
 
 export default function AboutSection() {
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => setIsMounted(true), []);
-  if (!isMounted) return null;
-
   return (
     <motion.section
       id="about"

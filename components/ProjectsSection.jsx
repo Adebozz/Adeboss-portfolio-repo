@@ -1,13 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaStar } from "react-icons/fa";
 
 export default function ProjectsSection() {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
-
   const projects = [
     {
       title: "Real-Time Fraud Detection",
@@ -16,6 +11,7 @@ export default function ProjectsSection() {
       img: "/images/fraud-detection.png",
       github: "https://github.com/Adebozz/fraud-detection-mlops",
       live: "https://fraud-detect-it.streamlit.app/",
+      demoNote: "Hosted on Streamlit's free tier. If the demo is asleep, wake it with the button on that page and allow a minute or so.",
       featured: true,
     },
     {
@@ -32,7 +28,6 @@ export default function ProjectsSection() {
       desc: "A modern full-stack e-commerce site with product listings, cart, and checkout.",
       tech: ["Next.js", "React", "MongoDB", "CSS"],
       img: "/images/image.png",
-      github: "https://github.com/Adebozz/dessystores",
       live: "https://dessystores.vercel.app/",
     },
     {
@@ -125,15 +120,22 @@ export default function ProjectsSection() {
                   >
                     <FaExternalLinkAlt size={12} /> Live Demo
                   </a>
-                  <a
-                    href={proj.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                  >
-                    <FaGithub size={14} /> Code
-                  </a>
+                  {proj.github && (
+                    <a
+                      href={proj.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                    >
+                      <FaGithub size={14} /> Code
+                    </a>
+                  )}
                 </div>
+                {proj.demoNote && (
+                  <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+                    {proj.demoNote}
+                  </p>
+                )}
               </div>
             </motion.div>
           ))}

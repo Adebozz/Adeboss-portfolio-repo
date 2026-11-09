@@ -6,7 +6,6 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function HomeSection() {
-  const [mounted, setMounted] = useState(false);
   const [roleIndex, setRoleIndex] = useState(0);
 
   const roles = [
@@ -17,21 +16,15 @@ export default function HomeSection() {
   ];
 
   useEffect(() => {
-    setMounted(true);
     const interval = setInterval(() => {
       setRoleIndex((prev) => (prev + 1) % roles.length);
     }, 2500);
     return () => clearInterval(interval);
   }, []);
 
-  if (!mounted) return null;
-
   return (
-    <motion.section
+    <section
       id="home"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
       className="relative min-h-screen flex flex-col-reverse sm:flex-row items-center justify-center gap-10 sm:gap-14 px-6 lg:px-16 pt-28 pb-16 bg-white dark:bg-gray-900 overflow-hidden"
     >
       {/* Decorative background glow */}
@@ -45,12 +38,7 @@ export default function HomeSection() {
       />
 
       {/* Text */}
-      <motion.div
-        initial={{ opacity: 0, x: -40 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        className="max-w-xl flex-1 text-center sm:text-left relative z-10"
-      >
+      <div className="max-w-xl flex-1 text-center sm:text-left relative z-10 motion-safe:animate-hero-left">
         <span className="inline-flex items-center gap-2 text-xs font-medium px-3 py-1.5 rounded-full bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800 mb-5">
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
           Available for opportunities
@@ -66,7 +54,7 @@ export default function HomeSection() {
         {/* Animated Role */}
         <motion.p
           key={roleIndex}
-          initial={{ opacity: 0, y: 10 }}
+          initial={roleIndex === 0 ? false : { opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-lg sm:text-xl lg:text-2xl font-medium text-blue-600 dark:text-blue-400 mb-5 h-8"
@@ -130,15 +118,10 @@ export default function HomeSection() {
             </a>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Image */}
-      <motion.div
-        initial={{ opacity: 0, x: 40 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        className="flex-shrink-0 relative z-10"
-      >
+      <div className="flex-shrink-0 relative z-10 motion-safe:animate-hero-right">
         <div className="relative">
           <div
             aria-hidden="true"
@@ -153,7 +136,7 @@ export default function HomeSection() {
             priority
           />
         </div>
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 }

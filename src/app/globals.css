@@ -1,8 +1,28 @@
 @import "tailwindcss";
 
+/* Tailwind 4 follows the OS by default; drive dark: from the .dark class instead */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-background: #ffffff;
   --color-foreground: #171717;
+
+  --animate-hero-left: hero-left 0.8s ease-out both;
+  --animate-hero-right: hero-right 0.8s ease-out both;
+
+  @keyframes hero-left {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+  }
+
+  @keyframes hero-right {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+  }
 }
 
 @theme .dark {
