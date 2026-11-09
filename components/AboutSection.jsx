@@ -11,12 +11,12 @@ const highlights = [
   {
     Icon: FaBrain,
     title: "AI & Machine Learning",
-    desc: "MSc in AI & Data Science from the University of Hull; shipping production ML systems with real monitoring, drift detection, and MLOps.",
+    desc: "MSc in AI & Data Science from the University of Hull; building ML systems with monitoring, drift detection, and MLOps.",
   },
   {
     Icon: FaServer,
     title: "MLOps & Cloud",
-    desc: "Dockerized deployments on Kubernetes with Terraform, Prometheus monitoring, and CI/CD — models that survive contact with production.",
+    desc: "Docker images, Kubernetes manifests, Terraform, Prometheus monitoring, and CI/CD for taking models from training to serving.",
   },
 ];
 

@@ -63,8 +63,8 @@ export default function HomeSection() {
         </motion.p>
 
         <p className="text-base lg:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-          I build modern, user-focused web applications and production ML
-          systems — from adaptive AI study tools to real-time fraud detection.
+          I build modern, user-focused web applications and end-to-end ML
+          systems — from adaptive study tools to real-time fraud detection.
         </p>
 
         {/* CTAs */}

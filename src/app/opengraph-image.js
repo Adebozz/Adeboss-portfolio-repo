@@ -35,7 +35,7 @@ export default function OpengraphImage() {
             color: "#d1d5db",
           }}
         >
-          Modern web applications and production ML systems, from adaptive AI
+          Modern web applications and end-to-end ML systems, from adaptive
           study tools to real-time fraud detection.
         </div>
       </div>

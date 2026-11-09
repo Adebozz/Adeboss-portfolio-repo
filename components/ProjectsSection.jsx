@@ -6,7 +6,7 @@ export default function ProjectsSection() {
   const projects = [
     {
       title: "Real-Time Fraud Detection",
-      desc: "Production-grade MLOps system that scores card transactions in ~1 ms — and knows when its own answers can't be trusted. PR-AUC 0.882 with drift detection, shadow deployments, and automated champion/challenger retraining.",
+      desc: "End-to-end MLOps system trained on 284,807 real card transactions. PR-AUC 0.882, with drift detection, shadow deployment, and drift-gated champion/challenger retraining, exercised against simulated traffic.",
       tech: ["XGBoost", "FastAPI", "MLflow", "Kubernetes", "Terraform", "Prometheus"],
       img: "/images/fraud-detection.png",
       github: "https://github.com/Adebozz/fraud-detection-mlops",
@@ -16,24 +16,24 @@ export default function ProjectsSection() {
     },
     {
       title: "Cognify — AI Study Engine",
-      desc: "Adaptive exam-prep app that turns uploaded notes, slides, and PDFs into a personalised 3-phase revision session: knowledge scan, weak-spot drill, and final challenge — with confidence scoring and topic mastery breakdowns.",
-      tech: ["Next.js", "TypeScript", "AI Integration"],
+      desc: "Adaptive exam-prep app that turns uploaded study material into a 3-phase revision session: knowledge scan, weak-spot drill, and final challenge. Runs on a free rule-based demo engine by default, with optional AI question generation through OpenAI or Claude.",
+      tech: ["Next.js", "TypeScript", "OpenAI & Claude APIs"],
       img: "/images/cognify.png",
       github: "https://github.com/Adebozz/cognify",
       live: "https://cognify-exam.vercel.app/",
       featured: true,
     },
     {
-      title: "E-Commerce Website",
-      desc: "A modern full-stack e-commerce site with product listings, cart, and checkout.",
-      tech: ["Next.js", "React", "MongoDB", "CSS"],
+      title: "Dessy Stores",
+      desc: "Full-stack e-commerce monorepo with a customer storefront, admin panel, and REST API, including Paystack checkout.",
+      tech: ["React", "TypeScript", "Express", "MongoDB"],
       img: "/images/image.png",
       live: "https://dessystores.vercel.app/",
     },
     {
-      title: "PDF Converter",
-      desc: "Converts files to PDF and vice versa. Stores uploaded files securely.",
-      tech: ["React", "TailwindCSS", "MongoDB"],
+      title: "PDF Toolkit",
+      desc: "Web-based PDF toolkit to compress, convert, merge, split, rotate, protect, and OCR documents.",
+      tech: ["Next.js", "TypeScript", "pdf-lib", "Tesseract.js"],
       img: "/images/pdf-convert.png",
       github: "https://github.com/Adebozz/pdf-converter",
       live: "https://pdf-convert-set.vercel.app/",
@@ -60,7 +60,7 @@ export default function ProjectsSection() {
           viewport={{ once: true }}
           className="mt-3 text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
-          From production ML systems to full-stack web apps — a selection of
+          From ML systems to full-stack web apps — a selection of
           things I&apos;ve designed, built, and shipped.
         </motion.p>
 
