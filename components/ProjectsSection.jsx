@@ -32,6 +32,15 @@ export default function ProjectsSection() {
       featured: true,
     },
     {
+      title: "StepFree London",
+      desc: "Accessible journey planning and disruption alerts for London, built on live TfL data. Missing accessibility data is shown as unavailable instead of guessed, and the app is covered by 288 automated backend, frontend, and browser tests.",
+      tech: ["Java", "Spring Boot", "React", "TypeScript", "PostgreSQL", "Docker"],
+      img: "/images/stepfree.png",
+      github: "https://github.com/Adebozz/stepfree",
+      live: "https://stepfree-london.onrender.com/",
+      demoNote: "Hosted on a free tier, so the first visit after a quiet spell can take a minute or more to load.",
+    },
+    {
       title: "Cognify — AI Study Engine",
       desc: "Adaptive exam-prep app that turns uploaded study material into a 3-phase revision session: knowledge scan, weak-spot drill, and final challenge. Runs on a free rule-based demo engine by default, with optional AI question generation through OpenAI or Claude.",
       tech: ["Next.js", "TypeScript", "OpenAI & Claude APIs"],
