@@ -9,6 +9,15 @@
 
   --animate-hero-left: hero-left 0.8s ease-out both;
   --animate-hero-right: hero-right 0.8s ease-out both;
+  --animate-avatar-float: avatar-float 5s ease-in-out infinite;
+  --animate-avatar-nod: avatar-nod 7s ease-in-out infinite;
+  --animate-avatar-blink: avatar-blink 5s linear infinite;
+  --animate-avatar-glance: avatar-glance 9s ease-in-out infinite;
+  --animate-avatar-glint: avatar-glint 6s ease-in-out infinite;
+  --animate-avatar-tap: avatar-tap 0.7s ease-in-out infinite;
+  --animate-avatar-key: avatar-key 1.6s linear infinite;
+  --animate-avatar-code: avatar-code 6s ease-out infinite both;
+  --animate-avatar-pulse: avatar-pulse 2.4s ease-in-out infinite;
 
   @keyframes hero-left {
     from {
@@ -21,6 +30,99 @@
     from {
       opacity: 0;
       transform: translateX(40px);
+    }
+  }
+
+  @keyframes avatar-float {
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  @keyframes avatar-nod {
+    30% {
+      transform: rotate(1.5deg);
+    }
+    70% {
+      transform: rotate(-1.5deg);
+    }
+  }
+
+  @keyframes avatar-blink {
+    0%,
+    94%,
+    100% {
+      transform: scaleY(1);
+    }
+    97% {
+      transform: scaleY(0.08);
+    }
+  }
+
+  @keyframes avatar-glance {
+    0%,
+    30%,
+    100% {
+      transform: translate(0, 0);
+    }
+    36%,
+    52% {
+      transform: translate(0, 2.5px);
+    }
+    60%,
+    72% {
+      transform: translate(3px, -1px);
+    }
+  }
+
+  @keyframes avatar-glint {
+    0%,
+    70% {
+      transform: translateX(0);
+    }
+    95%,
+    100% {
+      transform: translateX(130px);
+    }
+  }
+
+  @keyframes avatar-tap {
+    50% {
+      transform: translateY(3px);
+    }
+  }
+
+  @keyframes avatar-key {
+    0%,
+    30%,
+    100% {
+      opacity: 0;
+    }
+    8%,
+    20% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes avatar-code {
+    0% {
+      transform: scaleX(0);
+      opacity: 1;
+    }
+    30%,
+    90% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 0;
+    }
+  }
+
+  @keyframes avatar-pulse {
+    50% {
+      transform: scale(1.3);
     }
   }
 }

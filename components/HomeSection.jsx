@@ -1,9 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import HeroAvatar from "./HeroAvatar";
 
 export default function HomeSection() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -127,14 +127,7 @@ export default function HomeSection() {
             aria-hidden="true"
             className="absolute -inset-3 bg-gradient-to-tr from-blue-600/30 to-indigo-500/30 rounded-3xl blur-xl"
           />
-          <Image
-            src="/images/adebossPhoto.png"
-            alt="Adeboss"
-            width={350}
-            height={350}
-            className="relative rounded-2xl object-cover shadow-xl w-[220px] sm:w-[280px] lg:w-[350px] h-auto ring-1 ring-gray-200 dark:ring-gray-700"
-            priority
-          />
+          <HeroAvatar className="relative rounded-2xl shadow-xl w-[220px] sm:w-[280px] lg:w-[350px] h-auto ring-1 ring-gray-200 dark:ring-gray-700" />
         </div>
       </div>
     </section>
