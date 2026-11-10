@@ -9,10 +9,9 @@ export default function HomeSection() {
   const [roleIndex, setRoleIndex] = useState(0);
 
   const roles = [
-    "Software Developer",
+    "Software Engineer",
+    "AI Engineer",
     "Full-Stack Developer",
-    "AI & Data Science Enthusiast",
-    "Machine Learning Engineer",
   ];
 
   useEffect(() => {
