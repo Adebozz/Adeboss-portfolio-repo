@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight, FaDownload } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import HeroAvatar from "./HeroAvatar";
 
@@ -79,6 +79,13 @@ export default function HomeSection() {
             className="inline-flex items-center gap-2 font-medium px-6 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all hover:-translate-y-0.5"
           >
             Get in touch
+          </a>
+          <a
+            href="/cv/Ademola-Adeigbe-CV.pdf"
+            download
+            className="inline-flex items-center gap-2 font-medium px-6 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all hover:-translate-y-0.5"
+          >
+            <FaDownload size={13} /> Download CV
           </a>
           <div className="flex items-center gap-3 sm:ml-2">
             <a

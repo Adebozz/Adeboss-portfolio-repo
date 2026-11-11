@@ -17,7 +17,7 @@ export default function Navbar() {
     localStorage.setItem("color-theme", isDark ? "dark" : "light");
   };
 
-  const links = ["Home", "About", "Skills", "Experience", "Projects", "Contact"];
+  const links = ["Home", "About", "Skills", "Projects", "Contact"];
 
   return (
     <motion.nav
