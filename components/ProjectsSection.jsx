@@ -15,6 +15,14 @@ export default function ProjectsSection() {
       featured: true,
     },
     {
+      title: "Enterprise Service Management",
+      desc: "IT service desk covering incidents, service requests, problems, and changes, with role-based access, approvals, business-hours SLA clocks, attachments, notifications, and reports. Covered by 694 backend and 117 frontend tests; a local k6 load test against the Docker stack served 166 requests/s with no errors and a 71 ms p95.",
+      tech: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "Docker"],
+      img: "/images/enterprise-service-management.jpg",
+      github: "https://github.com/Adebozz/enterprise-service-management",
+      featured: true,
+    },
+    {
       title: "UK Visa RAG Assistant",
       desc: "Answers visa questions from official gov.uk guidance with enforced citations, and refuses when retrieval confidence is low. Adding cross-encoder reranking to hybrid search raised top-result accuracy from 53% to 74% on a 100-question evaluation, for about 95 ms of extra latency.",
       tech: ["Python", "Claude API", "BM25", "Sentence Transformers", "FastAPI", "Streamlit"],
