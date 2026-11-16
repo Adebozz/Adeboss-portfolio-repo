@@ -27,7 +27,26 @@ import {
   SiGithub,
   SiVercel,
   SiWordpress,
+  SiOpenjdk,
+  SiSpringboot,
+  SiPostgresql,
+  SiHibernate,
+  SiFlyway,
+  SiExpress,
+  SiVite,
+  SiReactquery,
+  SiPandas,
+  SiAnthropic,
+  SiOpenai,
+  SiHuggingface,
+  SiOllama,
+  SiGithubactions,
+  SiJunit5,
+  SiVitest,
+  SiTestinglibrary,
+  SiK6,
 } from "react-icons/si";
+import { FaCube } from "react-icons/fa";
 
 const skillGroups = [
   {
@@ -38,6 +57,8 @@ const skillGroups = [
       { name: "React", Icon: SiReact, color: "#61DAFB" },
       { name: "Next.js", Icon: SiNextdotjs, color: "currentColor" },
       { name: "Tailwind", Icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "Vite", Icon: SiVite, color: "#646CFF" },
+      { name: "TanStack Query", Icon: SiReactquery, color: "#FF4154" },
       { name: "HTML", Icon: SiHtml5, color: "#E34F26" },
       { name: "CSS", Icon: SiCss3, color: "#1572B6" },
     ],
@@ -45,8 +66,14 @@ const skillGroups = [
   {
     category: "Backend & Data",
     skills: [
+      { name: "Java", Icon: SiOpenjdk, color: "currentColor" },
+      { name: "Spring Boot", Icon: SiSpringboot, color: "#6DB33F" },
+      { name: "Hibernate / JPA", Icon: SiHibernate, color: "#BCAE79" },
+      { name: "PostgreSQL", Icon: SiPostgresql, color: "#4169E1" },
+      { name: "Flyway", Icon: SiFlyway, color: "#CC0200" },
       { name: "Python", Icon: SiPython, color: "#3776AB" },
       { name: "Node.js", Icon: SiNodedotjs, color: "#5FA04E" },
+      { name: "Express", Icon: SiExpress, color: "currentColor" },
       { name: "FastAPI", Icon: SiFastapi, color: "#009688" },
       { name: "PHP", Icon: SiPhp, color: "#777BB4" },
       { name: "MySQL", Icon: SiMysql, color: "#4479A1" },
@@ -57,6 +84,12 @@ const skillGroups = [
     category: "AI & MLOps",
     skills: [
       { name: "scikit-learn", Icon: SiScikitlearn, color: "#F7931E" },
+      { name: "XGBoost" },
+      { name: "pandas", Icon: SiPandas, color: "#150458" },
+      { name: "Claude API", Icon: SiAnthropic, color: "currentColor" },
+      { name: "OpenAI API", Icon: SiOpenai, color: "currentColor" },
+      { name: "Sentence Transformers", Icon: SiHuggingface, color: "#FFD21E" },
+      { name: "Ollama", Icon: SiOllama, color: "currentColor" },
       { name: "MLflow", Icon: SiMlflow, color: "#0194E2" },
       { name: "Streamlit", Icon: SiStreamlit, color: "#FF4B4B" },
       { name: "Docker", Icon: SiDocker, color: "#2496ED" },
@@ -67,9 +100,21 @@ const skillGroups = [
     ],
   },
   {
+    category: "Testing",
+    skills: [
+      { name: "JUnit 5", Icon: SiJunit5, color: "#25A162" },
+      { name: "Testcontainers" },
+      { name: "Vitest", Icon: SiVitest, color: "#6E9F18" },
+      { name: "Testing Library", Icon: SiTestinglibrary, color: "#E33332" },
+      { name: "Playwright" },
+      { name: "k6", Icon: SiK6, color: "#7D64FF" },
+    ],
+  },
+  {
     category: "Tools",
     skills: [
       { name: "Git", Icon: SiGit, color: "#F05032" },
+      { name: "GitHub Actions", Icon: SiGithubactions, color: "#2088FF" },
       { name: "GitHub", Icon: SiGithub, color: "currentColor" },
       { name: "Vercel", Icon: SiVercel, color: "currentColor" },
       { name: "WordPress", Icon: SiWordpress, color: "#21759B" },
@@ -104,18 +149,19 @@ export default function Skills() {
               </h3>
 
               <div className="flex flex-wrap gap-2.5">
-                {group.skills.map((skill) => (
+                {group.skills.map(({ name, Icon = FaCube, color = "currentColor" }) => (
                   <span
-                    key={skill.name}
+                    key={name}
                     className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-800 dark:text-gray-200 shadow-sm hover:shadow-md hover:border-blue-400/50 dark:hover:border-blue-500/50 hover:-translate-y-0.5 transition-all"
                   >
-                    <skill.Icon
+                    {/* Tools without a brand icon get a neutral one. */}
+                    <Icon
                       size={16}
-                      color={skill.color}
+                      color={color}
                       className="shrink-0 text-gray-900 dark:text-white"
-                      aria-label={skill.name}
+                      aria-hidden="true"
                     />
-                    {skill.name}
+                    {name}
                   </span>
                 ))}
               </div>
